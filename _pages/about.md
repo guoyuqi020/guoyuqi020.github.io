@@ -1,35 +1,47 @@
 ---
 permalink: /
-title: "Academic Pages is a ready-to-fork GitHub Pages template for academic personal websites"
+# title: "Academic Pages is a ready-to-fork GitHub Pages template for academic personal websites"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
 
-This is the front page of a website that is powered by the [Academic Pages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the repository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. Incidentally, these same features make it a great template for anyone that needs to show off a professional template!
+I'm a Ph.D. candidate in Software Engineering at Institute of Software, Universify of Chinese Academy of Sciences. I am advised by Prof. [Yan Cai](https://yancai.site/). I expect to graduate in 2027.
 
- You can fork [this template](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and Markdown files, add your own PDFs and other content, and have your own site for free, with no ads!
+My recent research focuses on AI-assisted software engineering, where I explore approaches for combining AI's code semantics comprehension with rule-based software analysis techniques for effective software developing/testing. Previously, my research interests centered on developing algorithms for detecting concurrency bugs in large-scale programs, and testing approaches for detecting non-correspondences in cross-architectural software porting.
 
-A data-driven personal website
+
+
+Education
 ======
-Like many other Jekyll-based GitHub Pages templates, Academic Pages makes you separate the website's content from its form. The content & metadata of your website are in structured Markdown files, while various other files constitute the theme, specifying how to transform that content & metadata into HTML pages. You keep these various Markdown (.md), YAML (.yml), HTML, and CSS files in a public GitHub repository. Each time you commit and push an update to the repository, the [GitHub pages](https://pages.github.com/) service creates static HTML pages based on these files, which are hosted on GitHub's servers free of charge.
+| Degree | Institution | Major | Year |
+|--------|-------------|-------|------|
+| B.S.   | Peking University | Electronics Engineering and Computer Science | 2017-2021 |
+| Ph.D.  | University of Chinese Academy of Sciences | Software Engineering | 2021-2027 (expected) |
 
-Many of the features of dynamic content management systems (like Wordpress) can be achieved in this fashion, using a fraction of the computational resources and with far less vulnerability to hacking and DDoSing. You can also modify the theme to your heart's content without touching the content of your site. If you get to a point where you've broken something in Jekyll/HTML/CSS beyond repair, your Markdown files describing your talks, publications, etc. are safe. You can rollback the changes or even delete the repository and start over - just be sure to save the Markdown files! You can also write scripts that process the structured data on the site, such as [this one](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb) that analyzes metadata in pages about talks to display [a map of every location you've given a talk](https://academicpages.github.io/talkmap.html).
 
-For those users that need more advanced functionality, the template also supports the following popular tools:
-- [MathJax](https://www.mathjax.org/) for mathematical equations
-- [Mermaid](https://mermaid.js.org/) for diagraming
-- [Plotly](https://plotly.com/javascript/) for plotting
-
-Getting started
+Recent Research Practices
 ======
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-1. Fork [this template](https://github.com/academicpages/academicpages.github.io) by clicking the "Use this template" button in the top right. 
-1. Go to the repository's settings (rightmost item in the tabs that start with "Code", should be below "Unwatch"). Rename the repository "[your GitHub username].github.io", which will also be your website's URL.
-1. Set site-wide configuration and create content & metadata (see below -- also see [this set of diffs](https://archive.is/3TPas) showing what files were changed to set up [an example site](https://getorg-testacct.github.io) for a user with the username "getorg-testacct")
-1. Upload any files (like PDFs, .zip files, etc.) to the files/ directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.  
-1. Check status by going to the repository settings, in the "GitHub pages" section
+1. Application of Reinforcement Learning for Data Race Detection
+**TL;DR:** We trained a 4B model with GRPO algorithm, which resolved up to 65% of data races that were missed by the SOTA rule-based race detectors. Besides, it outperformed Claude-Sonnet-4.5 (and many other SOTA closed-source LLMs) by detecting 33.48% more data races while reducing 65.23% token consumption.
+
+**Detailed Introduction:** Due to the extremely large search space in the thread interleaving of concurrent programs, the data race detection problem is known to be NP-complete. 
+Existing rule-based dynamic data race detection techniques often struggle to balance between soundness (all reports are true positive) and completeness (all data races can be detected).
+The LLM-based approaches, however, can guarantee neither soundness nor completeness due to their inherent probabilistic nature.
+In this research, we propose a novel approach that leverages reinforcement learning (RL) to train a customized LLM for sound data race detection.
+Specifically, we formalize the data race detection problem as a topological sorting problem on a directed acyclic graph (DAG), where nodes represent program operations and edges represent the "happens-before" relationships.
+We transform the target of data race detection as finding an linearization of the DAG that exposes data races.
+To ensure soundness, we model the program semantics as constraints on DAG topological sorting, thus guaranting that all generated linearizations correspond to valid thread interleavings.
+As a mathematical problem, the solution of constrained topological sorting can be efficiently verified, i.e., whether a generated linearization satifies all the "happens-before" constraints.
+Inspired by the recent advances in RL for mathematical problem solving, we utilize the GRPO algorithm to train a 4B LLM to solve this constrained topological sorting problem.
+We study the data generation strategies, training process, and reward signal design for effectively training the model.
+The experimental results on a real-world concurrent programs demonstrate that our approach can effectively outperform existing rule-based and LLM-based data race detection techniques.
+
+1. Automated Non-correspondence Detection in Cross-architectural Software Porting
+
+
+
 
 Site-wide configuration
 ------
