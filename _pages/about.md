@@ -53,8 +53,8 @@ Please also refer to [Google Scholar](https://scholar.google.com/citations?user=
 | No. | Title | Venue | Role |
 |--------|-------------|-------|-------|
 | 1 | Reduce Dependence for Sound Concurrency Bug Prediction | ICSE 2025 (CCF-A) | Second Author |
-| 2 | Reorder pointer flow in sound concurrency bug prediction | ICSE 2024 (CCF-A) | First Author |
-| 3 | Tolerate control-flow changes for sound data race prediction | ICSE 2023 (CCF-A) | Co-first Author (ranked 2nd) |
+| 2 | Reorder Pointer Flow in Sound Concurrency Bug Prediction | ICSE 2024 (CCF-A) | First Author |
+| 3 | Tolerate Control-flow Changes for Sound Data Race Prediction | ICSE 2023 (CCF-A) | Co-first Author (ranked 2nd) |
 | 4 | Sound Predictive Fuzzing for Multi-threaded Programs | COMPSAC 2023 (CCF-C) | First Author |
 |--------|-------------|-------|-------|
 
@@ -69,7 +69,7 @@ Existing rule-based dynamic data race detection techniques often struggle to bal
 The LLM-based approaches, however, can guarantee neither soundness nor completeness due to their inherent probabilistic nature.
 In this research, we propose a novel approach that leverages reinforcement learning (RL) to train a customized LLM for sound data race detection.
 Specifically, we formalize the data race detection problem as a topological sorting problem on a directed acyclic graph (DAG), where nodes represent program operations and edges represent the "happens-before" relationships.
-We transform the target of data race detection as finding an linearization of the DAG that exposes data races.
+We transform the target of data race detection as finding an linearization of the DAG.
 To ensure soundness, we model the program semantics as constraints on DAG topological sorting, thus guaranting that all generated linearizations correspond to valid thread interleavings.
 As a mathematical problem, the solution of constrained topological sorting can be efficiently verified, i.e., whether a generated linearization satifies all the "happens-before" constraints.
 Inspired by the recent advances in RL for mathematical problem solving, we utilize the GRPO algorithm to train a 4B LLM to solve this constrained topological sorting problem.
