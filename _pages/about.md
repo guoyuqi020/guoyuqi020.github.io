@@ -9,7 +9,7 @@ redirect_from:
 
 I'm a Ph.D. candidate in Software Engineering at Institute of Software, Universify of Chinese Academy of Sciences. I am advised by Prof. [Yan Cai](https://yancai.site/). I expect to graduate in 2027.
 
-My recent research focuses on AI-assisted software engineering, where I explore approaches for combining AI's code semantics comprehension with rule-based software analysis techniques for effective software developing/testing. Previously, my research interests centered on developing algorithms for detecting concurrency bugs in large-scale programs, and testing approaches for detecting non-correspondences in cross-architectural software porting.
+My recent research focuses on AI-assisted software engineering, where I explore approaches for combining AI's code semantics comprehension with rule-based software analysis techniques for effective software developing/testing. Previously, my research interests centered on developing algorithms for detecting concurrency bugs in large-scale programs, and designing testing approaches for detecting non-correspondences in cross-architectural software porting.
 
 
 
