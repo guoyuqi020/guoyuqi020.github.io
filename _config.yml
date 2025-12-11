@@ -8,7 +8,7 @@
 
 # Basic Site Settings
 locale                   : "zh-CN"
-site_theme               : "default" # Currently available options are "default", "air"
+site_theme               : "air" # Currently available options are "default", "air"
 title                    : "Yuqi Guo's Homepage"
 title_separator          : "-"
 name                     : &name "Yuqi Guo (郭宇祺)"
