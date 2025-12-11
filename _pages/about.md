@@ -25,7 +25,8 @@ Education
 
 Recent Research Practices
 ======
-1. Application of Reinforcement Learning for Data Race Detection
+**Application of Reinforcement Learning for Data Race Detection**
+
 **TL;DR:** We trained a 4B model with GRPO algorithm, which resolved up to 65% of data races that were missed by the SOTA rule-based race detectors. Besides, it outperformed Claude-Sonnet-4.5 (and many other SOTA closed-source LLMs) by detecting 33.48% more data races while reducing 65.23% token consumption.
 
 **Detailed Introduction:** Due to the extremely large search space in the thread interleaving of concurrent programs, the data race detection problem is known to be NP-complete. 
@@ -40,7 +41,9 @@ Inspired by the recent advances in RL for mathematical problem solving, we utili
 We study the data generation strategies, training process, and reward signal design for effectively training the model.
 The experimental results on a real-world concurrent programs demonstrate that our approach can effectively outperform existing rule-based and LLM-based data race detection techniques.
 
-1. Automated Non-correspondence Detection in Cross-architectural Software Porting
+------
+
+**Automated Non-correspondence Detection in Cross-architectural Software Porting**
 
 
 
