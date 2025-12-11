@@ -23,7 +23,7 @@ repository               : "guoyuqi020/guoyuqi020.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "photo-3.png"
   name             : "Yuqi Guo (郭宇祺)"
   pronouns         : # example: "she/her"  
   bio              : "Ph.D. in Software Engineering"
