@@ -61,7 +61,7 @@ Awards
 |--------|-------------|-------|
 | Awards | Year | 获奖 |
 |--------|-------------|-------|
-| Merit Student, UCAS | 2025, 2023 | 中国科学院大学三好学生 |
+| Merit Student, UCAS | 2025 & 2023 | 中国科学院大学三好学生 |
 | First class scholarship of the Chinese Academy of Sciences | 2024-2025 | 中国科学院一等奖学金 |
 |--------|-------------|-------|
 
@@ -72,7 +72,7 @@ Competitions
 | Competitions | Year | 竞赛 |
 |--------|-------------|-------|
 | National College Student Mathematical Modeling Competition - National First Prize | 2018 | 全国大学生数学建模大赛 - 国家级一等奖 |
-| First class scholarship of the Chinese Academy of Sciences | 2024-2025 | 中国科学院一等奖学金 |
+| CPhO - Silver Medal | 2015 | 全国中学生物理竞赛 - 银牌 |
 |--------|-------------|-------|
 
 
