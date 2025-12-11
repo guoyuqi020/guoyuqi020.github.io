@@ -7,7 +7,7 @@
 # server process.
 
 # Basic Site Settings
-locale                   : "zh-CN"
+locale                   : "en-US"
 site_theme               : "air" # Currently available options are "default", "air"
 title                    : "Yuqi Guo's Homepage"
 title_separator          : "-"
@@ -24,7 +24,7 @@ repository               : "guoyuqi020/guoyuqi020.github.io"
 author:
   # Biographic information
   avatar           : "profile.png"
-  name             : "Yuqi Guo (郭宇祺)"
+  name             : "Yuqi Guo"
   pronouns         : # example: "she/her"  
   bio              : "Ph.D. in Software Engineering"
   location         : "Beijing, China"
