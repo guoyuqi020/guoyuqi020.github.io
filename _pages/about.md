@@ -23,37 +23,6 @@ Education
 | Ph.D.  | University of Chinese Academy of Sciences | Software Engineering | 2021-2027 (expected) |
 |--------|-------------|-------|------|
 
-Recent Research Practices
-======
-**Application of Reinforcement Learning for Data Race Detection**
-
-**TL;DR:** We trained a 4B model with GRPO algorithm, which resolved up to 65% of data races that were missed by the SOTA rule-based race detectors. Besides, it outperformed Claude-Sonnet-4.5 (and many other SOTA closed-source LLMs) by detecting 33.48% more data races while reducing 65.23% token consumption.
-
-**Detailed Introduction:** Due to the extremely large search space in the thread interleaving of concurrent programs, the data race detection problem is known to be NP-complete. 
-Existing rule-based dynamic data race detection techniques often struggle to balance between *soundness* (all reports are true positive) and *completeness* (all data races can be detected).
-The LLM-based approaches, however, can guarantee neither soundness nor completeness due to their inherent probabilistic nature.
-In this research, we propose a novel approach that leverages reinforcement learning (RL) to train a customized LLM for sound data race detection.
-Specifically, we formalize the data race detection problem as a topological sorting problem on a directed acyclic graph (DAG), where nodes represent program operations and edges represent the "happens-before" relationships.
-We transform the target of data race detection as finding an linearization of the DAG that exposes data races.
-To ensure soundness, we model the program semantics as constraints on DAG topological sorting, thus guaranting that all generated linearizations correspond to valid thread interleavings.
-As a mathematical problem, the solution of constrained topological sorting can be efficiently verified, i.e., whether a generated linearization satifies all the "happens-before" constraints.
-Inspired by the recent advances in RL for mathematical problem solving, we utilize the GRPO algorithm to train a 4B LLM to solve this constrained topological sorting problem.
-We study the data generation strategies, training process, and reward signal design for effectively training the model.
-The experimental results on a real-world concurrent programs demonstrate that our approach can effectively outperform existing rule-based and LLM-based data race detection techniques.
-
-------
-
-**Automated Non-correspondence Detection in Cross-architectural Software Porting**
-
-
-**TL;DR:** We developed a novel approach that combined rule-based trace alignment with LLM-based code comprehension to automatically detect non-correspondences in cross-architectural software porting. Our tool identified 13 RISC-V-related functionality bugs or performance optimization opportunities in real-world Github repositories, including libjpeg-turbo, xz, and Zstandard.
-
-**Detailed Introduction:** Cross-architectural software porting involves extending the existing software developed for the legacy architecture to ensure compatibility with a new one. Detecting porting-related bugs on large codebases can be challenging because manual code reviewing and debugging are time-consuming and labor-intensive. 
-In this research project, we proposed a novel system designed to automatically detect the control flow non-correspondences between the legacy and the new architectures with minimal human intervention. 
-It first leverages a rule-based trace alignment algorithm to identify and locate the control flow non-correspondences. 
-Subsequently, it utilizes coding agents to analyze the root cause analysis and filter out the non-buggy non-correspondences.
-Finally, it reports the unique control flow non-correspondences for manual bug review.
-
 
 Awards
 ------
@@ -88,3 +57,34 @@ Please also refer to my [Google Scholar](https://scholar.google.com/citations?us
 | 3 | Tolerate control-flow changes for sound data race prediction | ICSE 2023 (CCF-A) | Co-first Author (ranked 2nd) |
 | 4 | Sound Predictive Fuzzing for Multi-threaded Programs | COMPSAC 2023 (CCF-C) | First Author |
 |--------|-------------|-------|-------|
+
+Recent Research Practices
+======
+**Application of Reinforcement Learning for Data Race Detection**
+
+**TL;DR:** We trained a 4B model with GRPO algorithm, which resolved up to 65% of data races that were missed by the SOTA rule-based race detectors. Besides, it outperformed Claude-Sonnet-4.5 (and many other SOTA closed-source LLMs) by detecting 33.48% more data races while reducing 65.23% token consumption.
+
+**Detailed Introduction:** Due to the extremely large search space in the thread interleaving of concurrent programs, the data race detection problem is known to be NP-complete. 
+Existing rule-based dynamic data race detection techniques often struggle to balance between *soundness* (all reports are true positive) and *completeness* (all data races can be detected).
+The LLM-based approaches, however, can guarantee neither soundness nor completeness due to their inherent probabilistic nature.
+In this research, we propose a novel approach that leverages reinforcement learning (RL) to train a customized LLM for sound data race detection.
+Specifically, we formalize the data race detection problem as a topological sorting problem on a directed acyclic graph (DAG), where nodes represent program operations and edges represent the "happens-before" relationships.
+We transform the target of data race detection as finding an linearization of the DAG that exposes data races.
+To ensure soundness, we model the program semantics as constraints on DAG topological sorting, thus guaranting that all generated linearizations correspond to valid thread interleavings.
+As a mathematical problem, the solution of constrained topological sorting can be efficiently verified, i.e., whether a generated linearization satifies all the "happens-before" constraints.
+Inspired by the recent advances in RL for mathematical problem solving, we utilize the GRPO algorithm to train a 4B LLM to solve this constrained topological sorting problem.
+We study the data generation strategies, training process, and reward signal design for effectively training the model.
+The experimental results on a real-world concurrent programs demonstrate that our approach can effectively outperform existing rule-based and LLM-based data race detection techniques.
+
+------
+
+**Automated Non-correspondence Detection in Cross-architectural Software Porting**
+
+
+**TL;DR:** We developed a novel approach that combined rule-based trace alignment with LLM-based code comprehension to automatically detect non-correspondences in cross-architectural software porting. Our tool identified 13 RISC-V-related functionality bugs or performance optimization opportunities in real-world Github repositories, including libjpeg-turbo, xz, and Zstandard.
+
+**Detailed Introduction:** Cross-architectural software porting involves extending the existing software developed for the legacy architecture to ensure compatibility with a new one. Detecting porting-related bugs on large codebases can be challenging because manual code reviewing and debugging are time-consuming and labor-intensive. 
+In this research project, we proposed a novel system designed to automatically detect the control flow non-correspondences between the legacy and the new architectures with minimal human intervention. 
+It first leverages a rule-based trace alignment algorithm to identify and locate the control flow non-correspondences. 
+Subsequently, it utilizes coding agents to analyze the root cause analysis and filter out the non-buggy non-correspondences.
+Finally, it reports the unique control flow non-correspondences for manual bug review.
