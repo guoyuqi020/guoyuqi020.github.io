@@ -57,6 +57,7 @@ Finally, it reports the unique control flow non-correspondences for manual bug r
 
 Awards
 ------
+
 |--------|-------------|-------|
 | Awards | Year | 获奖 |
 |--------|-------------|-------|
@@ -66,6 +67,7 @@ Awards
 
 Competitions
 ------
+
 |--------|-------------|-------|
 | Competitions | Year | 竞赛 |
 |--------|-------------|-------|
