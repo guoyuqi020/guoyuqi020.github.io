@@ -47,7 +47,7 @@ Competitions
 
 Publications
 ------
-Please also refer to my [Google Scholar](https://scholar.google.com/citations?user=guNAr_QAAAAJ) for a complete list of my research papers.
+Please also refer to [Google Scholar](https://scholar.google.com/citations?user=guNAr_QAAAAJ) for a complete list of my research papers.
 
 |--------|-------------|-------|-------|
 | No. | Title | Venue | Role |
