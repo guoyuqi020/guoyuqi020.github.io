@@ -52,15 +52,16 @@ Please also refer to [Google Scholar](https://scholar.google.com/citations?user=
 |--------|-------------|-------|-------|
 | No. | Title | Venue | Role |
 |--------|-------------|-------|-------|
-| 1 | Reduce Dependence for Sound Concurrency Bug Prediction | ICSE 2025 (CCF-A) | Second Author |
-| 2 | Reorder Pointer Flow in Sound Concurrency Bug Prediction | ICSE 2024 (CCF-A) | First Author |
-| 3 | Tolerate Control-flow Changes for Sound Data Race Prediction | ICSE 2023 (CCF-A) | Co-first Author (ranked 2nd) |
-| 4 | Sound Predictive Fuzzing for Multi-threaded Programs | COMPSAC 2023 (CCF-C) | First Author |
+| 1 | DRPBench: Evaluating LLMs in Concurrent Code Comprehension via Fine-Grained Data Race Prediction | ICML 2026 Spotlight (CCF-A) | First Author |
+| 3 | Reduce Dependence for Sound Concurrency Bug Prediction | ICSE 2025 (CCF-A) | Second Author |
+| 4 | Reorder Pointer Flow in Sound Concurrency Bug Prediction | ICSE 2024 (CCF-A) | First Author |
+| 5 | Tolerate Control-flow Changes for Sound Data Race Prediction | ICSE 2023 (CCF-A) | Co-first Author (ranked 2nd) |
+| 6 | Sound Predictive Fuzzing for Multi-threaded Programs | COMPSAC 2023 (CCF-C) | First Author |
 |--------|-------------|-------|-------|
 
-Recent Research Practices
+Unpublished Research Works
 ======
-**Application of Reinforcement Learning for Data Race Detection**
+**Reinforcement Learning for Neuro-Symbolic Data Race Detection**
 
 **TL;DR:** We train a 4B model with GRPO algorithm, which resolves up to 65% of data races that were missed by the SOTA rule-based race detectors. Besides, it outperforms Claude-Sonnet-4.5 (and many other SOTA closed-source LLMs) by detecting 33.48% more data races while reducing 65.23% token consumption.
 
